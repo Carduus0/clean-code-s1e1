@@ -83,7 +83,8 @@
   text-transform: uppercase;
 }
 
-.todo__input {
+.todo__input, 
+.new-task__input {
   box-sizing: border-box;
   margin: 0;
   font-size: 18px;
@@ -146,21 +147,23 @@
 }
 
 /* Completed */
-.completed-tasks__label {
+.completed-tasks .todo__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.todo__input--hidden {
+.todo__input {
   display: none;
+}
+.task__edit-mode .todo__input{
+  display: block;
 }
 
 .todo__input--edit {
   display: inline-block;
   width: 224px;
 }
-
-.todo__label--hidden{
+.task__edit-mode .todo__label{
   display: none;
 }
